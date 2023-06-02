@@ -1,0 +1,498 @@
+@import "./../../../styles/variable.css";
+.header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 15px 0 15px 15px;
+    height: 60px;
+    z-index: 10;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.header .left-dropdown {
+    width: 210px;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    height: 100%;
+}
+
+.header .left-dropdown button {
+    text-align: left;
+    border: none;
+}
+
+.header .left-dropdown i {
+    right: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.header .left-dropdown button:focus,
+button:hover {
+    box-shadow: none;
+    border: none;
+}
+
+.header .page-name {
+    cursor: pointer;
+}
+
+
+.scrollbox:hover ::-webkit-scrollbar {
+      width: 10px;  
+  }
+
+  .scrollbox:hover ::-webkit-scrollbar-thumb {
+    background-color: #007de4;
+}
+
+.header .page-name:hover {
+    background-color: #e8f0fe;
+    border-radius: 5px;
+}
+
+.header .language-dropdown {
+    width: 170px;
+}
+
+.header .language-dropdown:hover {
+    background-color: #f8f8f8;
+}
+
+.header .language-dropdown button:focus {
+    box-shadow: none;
+    background-color: #f8f8f8 !important;
+}
+
+.header .header-dropdown {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.notification-icon {
+    position: relative;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}
+
+.notification-dot-icon {
+    color:"#D2042D";
+    font-size: 11px;
+}
+
+.header .header-noti {
+    border-right: 1px solid #868686;
+}
+.header .header-dropdown:last-child {
+    width: 100px;
+}
+
+.header .header-dropdown:last-child:hover i {
+    color: #0d0f12;
+}
+
+.header .header-dropdown:hover,
+.header .header-dropdown:focus {
+    background-color: #f8f8f8;
+}
+
+.header .menu-button {
+    background: transparent;
+    border: none;
+}
+
+.header .menu-button:focus,
+.menu-button:hover .header-btn {
+    box-shadow: none;
+    background-color: #f8f8f8 !important;
+}
+
+.header .menu-button:focus,
+.menu-button:hover .header-btn .border {
+    stroke: #0d0f12;
+}
+
+.header .menu-button:focus,
+.menu-button:hover .header-btn .fullscreen {
+    fill: #0d0f12;
+}
+
+.header .menu-button:focus,
+.menu-button:hover .header-btn .notification {
+    stroke: #0d0f12;
+    fill: #0d0f12;
+}
+
+
+.header .menu-button:hover .header-btn-fill .a {
+    fill: #868686;
+    box-shadow: none;
+    background-color: #f8f8f8 !important;
+}
+
+.header .menu-icon {
+    color: #868686;
+    font-size: 22px;
+}
+
+.header .menu-profile {
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--primary-color);
+}
+.menu-profile-modal .dropdown-menu{ 
+    transform: translate(-10px, 60px) !important;
+}
+.header .down-arrow {
+    color: #868686;
+    position: absolute;
+    right: 15px;
+    width: fit-content !important;
+    top: 25px;
+    font-size: 12px;
+}
+
+.header .menu-profile img,
+.header .menu-profile i {
+    width: 100%;
+    height: auto;
+}
+
+.header .menu-profile:focus {
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.header .menu-list {
+    padding: 10px;
+    width: 398px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.header .projects-section {
+    overflow: auto;
+    padding-bottom: 57px;
+    height: 100%;
+}
+
+.header .projects-section::-webkit-scrollbar {
+    display: none;
+}
+
+.header .project-list {
+    padding: 0;
+}
+
+.header .project-list:hover,
+.header .project-list:focus {
+    color: #212529;
+    background-color: transparent;
+}
+
+.header .menu-list .project-list .project {
+    width: 87px;
+    height: 87px;
+    text-align: center;
+    padding: 12px 0;
+    margin: 0 4px 5px;
+    pointer-events: visible;
+}
+
+.header .project .app-img {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header .menu-list .project-list .project:hover,
+.header .menu-list .project-list .project:disabled {
+    background-color: #e8f0fe;
+    border-radius: 5px;
+}
+
+.header .menu-list .project-list .project:nth-child(4n) {
+    margin: 0 0 5px 0;
+}
+
+.header .menu-list .project-list .project p {
+    padding-top: 5px;
+}
+
+.header .menu-list .more-project {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 57px;
+    background-color: #fff;
+    border-width: 1px 0 0px 0;
+    border-color: #dadce0;
+    border-style: solid;
+}
+
+.header .menu-list .more-project:hover {
+    background-color: #e8f0fe;
+}
+
+.header .profile-list {
+    width: 300px;
+    height: 308px;
+    overflow: hidden;
+    padding: 0;
+    z-index: 11 !important;
+}
+
+.header .profile-list .project-list {
+    padding: 10px;
+}
+
+.header .profile-list .profile-title {
+    padding: 4px 0;
+    line-height: 12px;
+}
+
+.header .profile-list .profile-detail {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header .profile-list .profile-detail img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.header .profile-list .profile-detail p {
+    line-height: 26px;
+}
+
+.header .profile-list .profile-detail .manage-button {
+    height: 28px;
+}
+
+.header .profile-id-list {
+    overflow: auto;
+    height: 50%;
+    padding-bottom: 80px !important;
+}
+
+.header .profile-id-list::-webkit-scrollbar {
+    display: none;
+}
+
+.header .project-list .profile-description {
+    padding: 10px;
+    border: none;
+}
+
+.header .project-list .profile-description img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header .profile-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.header .profile-footer .logout {
+    border-width: 1px 0 1px 0;
+    border-color: #dadce0;
+    border-style: solid;
+}
+
+.header .profile-footer .policy {
+    text-align: center;
+    height: 30px;
+}
+
+.header .switch {
+    width: 45px;
+    height: 25px;
+}
+
+.react-switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.react-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 45px;
+    height: 25px;
+    background: #dadce0;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color 0.2s ease;
+    margin: 0 10px;
+}
+
+.react-switch-label .react-switch-button {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 17px;
+    height: 17px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #fff;
+}
+
+.react-switch-checkbox:checked+.react-switch-label {
+    background-color: #007de4;
+}
+
+.react-switch-checkbox:checked+.react-switch-label .react-switch-button {
+    left: 90%;
+    transform: translateX(-100%);
+}
+
+.custom-class {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 25px;
+}
+
+.sidebar-toggle svg {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .header .left-dropdown {
+        width: 130px;
+        left: 82%;
+        top: 5px;
+        height: 40%;
+    }
+
+    .header .left-dropdown .page-name {
+        padding: 10px;
+    }
+
+    .header .left-dropdown i {
+        top: 12px;
+    }
+
+    .header .header-dropdown {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .header .right-header {
+        margin-top: 15px;
+    }
+
+    .header .down-arrow {
+        top: 15px;
+    }
+
+    .header .menu-list {
+        width: 300px;
+        transform: translate3d(-180px, 60px, 0px) !important;
+    }
+
+    .header .menu-list .project-list .project {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header .menu-list .project-list .project:nth-child(4n) {
+        margin: 0 9px 5px 0;
+    }
+
+    .header .profile-list {
+        margin-top: 25%;
+    }
+
+    .sidebar-toggle svg {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .information-section .upload-logo {
+        width: auto;
+        height: auto;
+    }
+
+    .header .left-dropdown {
+        width: 120px;
+        left: 65%;
+    }
+
+    .header .left-dropdown i {
+        right: 12px;
+    }
+
+    .header .language-dropdown {
+        position: absolute;
+        top: 5px;
+        left: 48%;
+        width: 100px;
+        height: 40%;
+    }
+
+    .header .down-arrow {
+        top: 18px;
+        right: 0px;
+    }
+
+    .header .language-dropdown img {
+        margin-right: 0;
+    }
+
+    .header .language-dropdown span {
+        display: none;
+    }
+
+    .header .header-dropdown {
+        padding: 0;
+    }
+
+    .header .header-dropdown:last-child {
+        width: 60px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.header-logo {
+    width: 70%;
+}

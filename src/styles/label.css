@@ -1,0 +1,90 @@
+@import "../styles/variable.css";
+
+.holders .thumb-horizontal,
+.thumb-vertical {
+	display: block;
+}
+
+@media only screen and (max-width: 768px) {
+	.holders {
+		padding: 20px 15px 30px 15px;
+	}
+}
+
+.rounded-10 {
+	border-radius: 10px;
+}
+
+.input-hieght {
+	min-height: 38px !important;
+}
+
+.button-width-com {
+	width: 100px !important;
+	height: 38px !important;
+}
+
+.hover-btn:hover {
+	background-color: #dadce0 !important ;
+}
+
+.nft-label-section {
+	height: 600px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.main-title {
+	font: normal normal bold 30px/36px Lato;
+	text-transform: capitalize;
+}
+
+.btn-add {
+	background-color: var(--primary-color) !important;
+}
+
+/* // profile  */
+
+.main-title {
+	font: normal normal bold 30px/36px Lato;
+	text-transform: capitalize;
+}
+
+.kyc-box {
+	background-color: #fff;
+	border: 1px solid #dadce0;
+}
+
+.kyc-box .box {
+	width: 19%;
+	height: 110px;
+	padding: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.sub-title {
+	color: #0d0f12;
+	font: normal normal bold 20px/26px Lato;
+}
+
+.edit-profile .info-field .info-image {
+	overflow: hidden;
+}
+
+.color-black2,
+.active-color-black2:hover,
+.active-color-black2:focus,
+.active-color-black1:active,
+.active-color-black1.active {
+	color: #4c4f53;
+}
+
+.text-upper {
+	text-transform: uppercase;
+	color: #4c4f53;
+}
+.info-name {
+	min-width: 210px;
+	text-transform: uppercase;
+}

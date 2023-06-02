@@ -1,0 +1,39 @@
+@font-face {
+	font-family: logoText;
+	src: url(../assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+	font-family: interBlod;
+	src: url(../assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+	font-family: interLight;
+	src: url(../assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+	font-family: interMediun;
+	src: url(../assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+	font-family: interRegular;
+	src: url(../assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+	font-family: interSemiBold;
+	src: url(../assets/font/copperplate_gothic_bold_regular.ttf);
+}
+
+:root {
+	--primary-color: #49D798;
+	--primary-color-opacity: #49d7972f;
+	--secondary-color: #3458b9;
+	--font-color: #424242;
+	--bg-color: #ffffff;
+	--heading-color: #292922;
+	--white-color: #ffffff;
+	--interBlod-text: interBlod;
+	--interLight-text: interLight;
+	--interMediun-text: interMediun;
+	--interRegular-text: interRegular;
+	--interSemiBold-text: interSemiBold;
+}

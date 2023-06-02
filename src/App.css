@@ -1,0 +1,116 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "styles/global.css";
+@font-face {
+  font-family: logoText;
+  src: url(assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+  font-family: interBlod;
+  src: url(assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+  font-family: interLight;
+  src: url(assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+  font-family: interMediun;
+  src: url(assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+  font-family: interRegular;
+  src: url(assets/font/copperplate_gothic_bold_regular.ttf);
+}
+@font-face {
+  font-family: interSemiBold;
+  src: url(assets/font/copperplate_gothic_bold_regular.ttf);
+}
+
+
+.root{
+  width: 100%;
+  height: 100%;
+}
+
+.logo-text{
+  font-family: logoText;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22x;
+  line-height: 22px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: Lato;
+  background-color: #f8f8f8;
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-wrapper:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* react date picker style */
+/* disable black outline when in focus-visible state */
+.react-datepicker-wrapper input:focus-visible{
+  outline: none !important;
+}
+.react-datepicker-popper {
+  z-index: 9999999;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}

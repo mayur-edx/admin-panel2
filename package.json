@@ -1,0 +1,98 @@
+{
+	"name": "my-app",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.2.1",
+		"@fortawesome/free-brands-svg-icons": "^6.2.1",
+		"@fortawesome/free-regular-svg-icons": "^6.2.1",
+		"@fortawesome/free-solid-svg-icons": "^6.2.1",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@reduxjs/toolkit": "^1.9.1",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@types/jest": "^27.5.2",
+		"@types/node": "^16.18.11",
+		"@types/react": "^18.0.27",
+		"@types/react-dom": "^18.0.10",
+		"@types/react-redux": "^7.1.25",
+		"axios": "^1.2.3",
+		"bootstrap": "^5.2.3",
+		"crypto-js": "^4.1.1",
+		"env-cmd": "^10.1.0",
+		"formik": "^2.2.9",
+		"moment": "^2.29.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-hot-toast": "^2.4.0",
+		"react-redux": "^8.0.5",
+		"react-router-dom": "^6.7.0",
+		"react-scripts": "5.0.1",
+		"react-select": "^5.7.2",
+		"react-switch": "^7.0.0",
+		"reactstrap": "^9.1.6",
+		"typescript": "^4.9.4",
+		"web-vitals": "^2.1.4",
+		"yup": "^1.0.2"
+	},
+	"scripts": {
+		"start:dev": "env-cmd -f .env.development react-scripts start",
+		"start:beta": "env-cmd -f .env.staging react-scripts start",
+		"start:live": "env-cmd -f .env.production react-scripts start",
+		"build": "react-scripts build",
+		"build:dev": "env-cmd -f .env.development react-scripts build",
+		"build:beta": "react-scripts build",
+		"build:live": "env-cmd -f .env.production react-scripts build",
+		"lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
+		"lint:fix": "prettier ./src/**/*.{js,jsx,ts,tsx} --write && eslint ./src/**/*.{js,jsx,ts,tsx} --fix",
+		"setup:project": "yarn install",
+		"update:project": "yarn",
+		"clear": "rm -rf build node_modules",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,ts,tsx}": [
+			"prettier --write",
+			"eslint --fix"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/crypto-js": "^4.1.1",
+		"@types/reactstrap": "^8.7.2",
+		"eslint": "^8.23.1",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.31.8",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1"
+	}
+}

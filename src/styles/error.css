@@ -1,0 +1,22 @@
+.upper-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+}
+.inner-content {
+	background-color: #f5f5f5;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.sub-content {
+	color: #ff0000;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.redirect {
+	text-align: center;
+	cursor: pointer;
+}

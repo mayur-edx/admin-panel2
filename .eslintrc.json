@@ -1,0 +1,56 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+	"overrides": [],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": ["prettier"],
+	"rules": {
+		"semi": "warn",
+		"@typescript-eslint/no-explicit-any": "off",
+		// suppress errors for missing 'import React' in files
+		"react/react-in-jsx-scope": "off",
+		// allow jsx syntax in js files (for next.js project)
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }], //should add ".ts" if typescript project
+		"@typescript-eslint/ban-ts-ignore": "off",
+		"quotes": ["warn", "double"],
+		"react/prop-types": 0,
+		"react/no-unescaped-entities": "off",
+		"array-element-newline": "off",
+		"object-curly-newline": "off",
+		"object-property-newline": "off",
+		"react/jsx-key": "warn",
+		"no-useless-concat": "off",
+		"jsx-a11y/anchor-is-valid": [
+			"off",
+			{
+				"components": ["Link"],
+				"specialLink": ["to"]
+			}
+		],
+		"react/no-unknown-property": "warn",
+		"prettier/prettier": [
+			"warn",
+			{
+				"endOfLine": "auto",
+				"printWidth": 200,
+				"tabWidth": 2,
+				"semi": true,
+				"singleQuote": false,
+				"trailingComma": "none",
+				"bracketSpacing": true,
+				"jsxBracketSameLine": true,
+				"usePrettierrc": false
+			}
+		]
+	}
+}

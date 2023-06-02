@@ -1,0 +1,54 @@
+@import "../../../styles/variable.css";
+/*Checkboxes styles*/
+.checkclass input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkclass input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font: 14px/20px "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  .checkclass input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+  }
+  
+  .checkclass input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all 0.12s, border-color 0.08s;
+    transition: all 0.12s, border-color 0.08s;
+  }
+  
+  .checkclass input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  @media (max-width: 756px) {
+    .custom-checkbox {
+      width: 99%;
+    }
+  }
+  

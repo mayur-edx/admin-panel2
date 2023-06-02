@@ -1,0 +1,144 @@
+@import "./../../styles/variable.css";
+.list-box {
+	background-color: #fff;
+	padding: 20px;
+}
+
+.list-box .box {
+	width: 24%;
+	height: 110px;
+	padding: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff !important;
+}
+
+.list-box .box:nth-child(1) {
+	background-color: var(--primary-color);
+}
+
+.list-box .box:nth-child(2) {
+	background-color: #052651;
+}
+
+.list-box .box:nth-child(3) {
+	background-color: #f2e8ff;
+}
+
+.list-box .box:nth-child(4) {
+	background-color: #ddeffc;
+}
+
+.list-box .box:nth-child(5) {
+	background-color: #e5fcdd;
+}
+.table-section {
+	border-radius: 5px;
+}
+
+.table-section thead {
+	background-color: var(--primary-color);
+	color: #fff;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	border-radius: 5px !important;
+}
+
+.table-section tbody tr {
+	border-bottom: 1px solid var(--primary-color);
+}
+
+.table-section thead th,
+tbody td {
+	border: none;
+}
+
+.table-section thead th,
+tbody th,
+tbody td {
+	padding: 17px !important;
+}
+
+.table-responsive {
+	border-radius: 4px;
+}
+
+.table-section tbody tr:last-child {
+	border-radius: 5px !important;
+}
+
+.tips-box {
+	height: 100%;
+	padding: 30px 20px;
+	position: relative;
+}
+
+.tips-box button {
+	position: absolute;
+	bottom: 30px;
+}
+
+.dashboard-coutns {
+	width: 49% !important;
+}
+
+.dashboard-coutns2 {
+	width: 49.3% !important;
+}
+.admin-dashboard {
+	width: 49%;
+}
+
+.admin-dashboard-complete-width {
+	width: 100%;
+}
+
+.admin-dashboard2 {
+	width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+	.list-box {
+		justify-content: left !important;
+	}
+	.list-box .box {
+		width: 30%;
+		margin: 20px 20px 0 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.list-box {
+		justify-content: space-between !important;
+	}
+	.list-box .box {
+		width: 47%;
+		margin: 10px 0 0;
+	}
+	.tip {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.dashboard-data {
+		flex-wrap: wrap;
+	}
+	.list-box .box {
+		width: 100%;
+		margin: 10px 0 0;
+	}
+
+	.dashboard-coutns {
+		width: 100% !important;
+		margin-top: 10px;
+	}
+
+	.dashboard-coutns2 {
+		width: 100% !important;
+	}
+	.admin-dashboard {
+		width: 100%;
+	}
+}
